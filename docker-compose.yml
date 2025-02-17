@@ -5,7 +5,6 @@ services:
     image: analogic/poste.io
     container_name: mailserver
     restart: unless-stopped
-    network_mode: "host"
     ports:
       - "25:25"
       - "8443:443"
